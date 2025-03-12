@@ -312,7 +312,7 @@ M.icon = function(config, node, state)
 
   local filtered_by = M.filtered_by(config, node, state)
 
-  icon.text = icon.text .. " " -- add padding
+  icon.text = icon.text -- .. " " -- add padding
   icon.highlight = filtered_by.highlight or icon.highlight --  prioritize filtered highlighting
 
   return icon
